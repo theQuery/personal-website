@@ -1,0 +1,43 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills__label {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skills__icons>svg {
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    transition: scale 0.2s;
+}
+
+.skills__icons>svg:hover {
+    scale: 1.2;
+}
+
+@media only screen and (orientation: landscape) {
+    .skills {
+        flex-direction: row;
+    }
+}

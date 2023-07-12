@@ -1,0 +1,75 @@
+.section {
+    padding-block: 64px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    padding-block: 16px;
+}
+
+.section__label {
+    margin: 0;
+    width: 80%;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(0deg, var(--primary-color) 50%, transparent 50%);
+    color: white;
+    font-size: 3rem;
+    font-style: oblique;
+    letter-spacing: -1.5px;
+    text-align: center;
+    filter: drop-shadow(0 5px 10px var(--secondary-color));
+}
+
+.section__right .section__content {
+    align-items: flex-end;
+}
+
+.section__right .section__label {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 40px;
+}
+
+.section__children {
+    padding: 32px;
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+
+.section__children p {
+    margin: 0;
+    max-width: 75ch;
+    line-height: 1.5;
+}
+
+.section:nth-child(1) {
+    background: linear-gradient(transparent, hsl(210, 94%, 25%));
+}
+
+.section:nth-child(2) {
+    height: 600px;
+    background: url('../assets/backgrounds/waves.svg'),
+        linear-gradient(hsl(210, 94%, 25%), var(--secondary-color));
+}
+
+.section:nth-child(3) {
+    height: 300px;
+    background: url('../assets/backgrounds/bubbles.svg');
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.section:nth-child(4) {
+    background: linear-gradient(hsl(219, 74%, 32%), hsl(240, 40%, 30%));
+}
+
+.section:nth-child(5) {
+    background: linear-gradient(hsl(240, 40%, 30%), var(--secondary-color));
+}
+
+.section:nth-child(6) {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color));
+}

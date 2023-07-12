@@ -1,0 +1,22 @@
+.about {
+    display: grid;
+    gap: 32px;
+}
+
+.about__image {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.about__image:nth-child(1) {
+    align-self: flex-end;
+}
+
+@media only screen and (orientation: landscape) {
+    .about {
+        grid-template-columns: 1fr 1fr;
+    }
+}

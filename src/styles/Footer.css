@@ -1,0 +1,7 @@
+.footer {
+    height: 220px;
+    background: url('../assets/backgrounds/sand.svg'),
+        linear-gradient(var(--secondary-color), var(--secondary-color));
+    background-position: center;
+    background-size: cover;
+}

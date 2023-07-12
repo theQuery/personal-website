@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: var(--primary-font);
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+
+  --primary-color: hsl(200, 100%, 40%);
+  --secondary-color: hsl(240, 37%, 15%);
+  --tertiary-color: hsl(140, 100%, 60%);
+  --primary-font: 'Signika', sans-serif;
+  --font-color: lightgray;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+@media only screen and (orientation: landscape) {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+}
