@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1706" height="828"
+    preserveAspectRatio="xMidYMid" viewBox="0 0 1706 828"
+    style="z-index:1;margin-right:-1.77778px;display:block;background-color:rgb(21, 64, 142);animation-play-state:paused">
+    <g transform="translate(853,414) scale(1,1) translate(-853,-414)"
+        style="transform:matrix(1, 0, 0, 1, 0, 0);animation-play-state:paused">
+        <defs style="animation-play-state:paused">
+            <filter id="blur-jteed5b8rml-1" x="-1" y="-1" width="3" height="3" style="animation-play-state:paused">
+                <feGaussianBlur stdDeviation="3" style="animation-play-state:paused"></feGaussianBlur>
+            </filter>
+            <filter id="blur-jteed5b8rml-2" x="-1" y="-1" width="3" height="3" style="animation-play-state:paused">
+                <feGaussianBlur stdDeviation="1.5" style="animation-play-state:paused"></feGaussianBlur>
+            </filter>
+            <filter id="blur-jteed5b8rml-3" x="-1" y="-1" width="3" height="3" style="animation-play-state:paused">
+                <feGaussianBlur stdDeviation="1" style="animation-play-state:paused"></feGaussianBlur>
+            </filter>
+        </defs>
+        <circle cx="446.95167146728477" cy="0" transform="matrix(1,0,0,1,0,429.933349609375)" r="7.6029651283819835"
+            fill="#bbddff" opacity="0.36000000000000004"
+            style="transform:matrix(1, 0, 0, 1, 0, 429.933);opacity:0.36;animation-play-state:paused"></circle>
+        <circle cx="365.69162584291604" cy="0" transform="matrix(1,0,0,1,0,349.217529296875)" r="13.43091561648038"
+            fill="#bbddff" opacity="0.7200000000000001"
+            style="transform:matrix(1, 0, 0, 1, 0, 349.218);opacity:0.72;animation-play-state:paused"></circle>
+        <circle cx="1589.1473101650197" cy="0" transform="matrix(1,0,0,1,0,266.35107421875)" r="11.231819928582405"
+            fill="#aabbcc" opacity="0.63"
+            style="transform:matrix(1, 0, 0, 1, 0, 266.351);opacity:0.63;animation-play-state:paused"></circle>
+        <circle cx="274.54981420990225" cy="0" transform="matrix(1,0,0,1,0,393.4685363769531)" r="14.33243811389936"
+            fill="#bbddff" opacity="0.7200000000000001"
+            style="transform:matrix(1, 0, 0, 1, 0, 393.469);opacity:0.72;animation-play-state:paused"></circle>
+        <circle cx="92.90098900135935" cy="0" transform="matrix(1,0,0,1,0,45.07086181640625)" r="12.37631736981206"
+            fill="#aabbcc" opacity="0.7200000000000001"
+            style="transform:matrix(1, 0, 0, 1, 0, 45.0709);opacity:0.72;animation-play-state:paused"></circle>
+        <circle cx="1574.599388061418" cy="0" transform="matrix(1,0,0,1,0,296.4974365234375)" r="8.91701724131298"
+            fill="#ddeeff" opacity="0.63"
+            style="transform:matrix(1, 0, 0, 1, 0, 296.497);opacity:0.63;animation-play-state:paused"></circle>
+        <circle cx="1536.8500241210093" cy="0" transform="matrix(1,0,0,1,0,637.333251953125)" r="12.070734050606422"
+            fill="#bbddff" opacity="0.7200000000000001"
+            style="transform:matrix(1, 0, 0, 1, 0, 637.333);opacity:0.72;animation-play-state:paused"></circle>
+        <circle cx="1270.624829113592" cy="0" transform="matrix(1,0,0,1,0,829.9832153320312)" r="6.900600918247569"
+            fill="#aabbcc" opacity="0.36000000000000004"
+            style="transform:matrix(1, 0, 0, 1, 0, 810.983);opacity:0.36;animation-play-state:paused"></circle>
+        <circle cx="1335.0931168068926" cy="0" transform="matrix(1,0,0,1,0,571.1204833984375)" r="4.2202958701354065"
+            fill="#aabbcc" opacity="0.36000000000000004"
+            style="transform:matrix(1, 0, 0, 1, 0, 571.121);opacity:0.36;animation-play-state:paused"></circle>
+        <circle cx="725.5433612281882" cy="0" transform="matrix(1,0,0,1,0,813.84130859375)" r="11.751564008496521"
+            fill="#ddeeff" opacity="0.63"
+            style="transform:matrix(1, 0, 0, 1, 0, 813.841);opacity:0.63;animation-play-state:paused"></circle>
+        <circle cx="783.2773152802522" cy="0" transform="matrix(1,0,0,1,0,499.2579040527344)" r="15.36847370392214"
+            fill="#bbddff" opacity="0.7200000000000001"
+            style="transform:matrix(1, 0, 0, 1, 0, 499.258);opacity:0.72;animation-play-state:paused"></circle>
+        <circle cx="46.406352083906825" cy="0" transform="matrix(1,0,0,1,0,667.853271484375)" r="4.1476360154349186"
+            fill="#bbddff" opacity="0.36000000000000004"
+            style="transform:matrix(1, 0, 0, 1, 0, 667.853);opacity:0.36;animation-play-state:paused"></circle>
+        <circle cx="682.2669408384162" cy="0" transform="matrix(1,0,0,1,0,533.3603515625)" r="8.122934764369056"
+            fill="#aabbcc" opacity="0.63"
+            style="transform:matrix(1, 0, 0, 1, 0, 533.36);opacity:0.63;animation-play-state:paused"></circle>
+        <circle cx="496.7558207623579" cy="0" transform="matrix(1,0,0,1,0,702.2994384765625)" r="11.02813167103845"
+            fill="#ddeeff" opacity="0.63"
+            style="transform:matrix(1, 0, 0, 1, 0, 702.299);opacity:0.63;animation-play-state:paused"></circle>
+        <circle cx="1505.0976479205185" cy="0" transform="matrix(1,0,0,1,0,186.468505859375)" r="6.553824930884402"
+            fill="#ddeeff" opacity="0.36000000000000004"
+            style="transform:matrix(1, 0, 0, 1, 0, 186.469);opacity:0.36;animation-play-state:paused"></circle>
+    </g>
+</svg>
