@@ -10,15 +10,21 @@ function Home({ contentRef }) {
     function handleTomClick(event) {
         const offset = 110;
         const scrollTop = contentRef.current.scrollTop;
+        const isOuch = !getRandomNumber(0, 9);
 
         const newPop = {
             x: event.clientX,
             y: event.clientY - offset + scrollTop,
+            isOuch: isOuch,
             timestamp: Date.now()
         };
 
         pops.current.push(newPop);
         setToms(oldToms => oldToms + 1);
+    }
+
+    function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max + 1 - min) + min);
     }
 
     pops.current = pops.current.filter(pop => {
@@ -31,12 +37,16 @@ function Home({ contentRef }) {
     return <Section>
         <div className='home__pops'>
             {pops.current.map(pop => {
+                const text = pop.isOuch ? 'ouch' : '+1';
+                const color = pop.isOuch ? 'red' : null;
+                const fontFamily = pop.isOuch ? 'Eater, cursive' : null;
+
                 return <div
                     key={pop.timestamp}
                     className='home__pop'
-                    style={{ left: pop.x, top: pop.y }}
+                    style={{ left: pop.x, top: pop.y, color, fontFamily }}
                 >
-                    +1
+                    {text}
                 </div>
             })}
         </div>
