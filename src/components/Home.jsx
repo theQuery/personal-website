@@ -1,5 +1,6 @@
 import '../styles/Home.css';
 import { useRef } from 'react';
+import TomImage from '../assets/tom/tom.png';
 import useLocalStorage from '../hooks/useLocalStorage';
 import Section from './Section';
 
@@ -7,24 +8,36 @@ function Home({ contentRef }) {
     const [toms, setToms] = useLocalStorage('toms', 0);
     const pops = useRef([]);
 
+    const popDatas = {
+        0: { toms: 1, text: null, color: null, fontFamily: null },
+        1: { toms: 3, text: null, color: 'red', fontFamily: null },
+        2: { toms: 1, text: 'ouch', color: 'red', fontFamily: 'Eater, cursive' }
+    };
+
     function handleTomClick(event) {
+        addPop(event, 0);
+    }
+
+    function handleHeadClick(event) {
+        event.stopPropagation();
+        addPop(event, 1);
+    }
+
+    function addPop(event, type) {
         const offset = 110;
         const scrollTop = contentRef.current.scrollTop;
-        const isOuch = !getRandomNumber(0, 9);
 
         const newPop = {
             x: event.clientX,
             y: event.clientY - offset + scrollTop,
-            isOuch: isOuch,
+            type: type,
             timestamp: Date.now()
         };
 
-        pops.current.push(newPop);
-        setToms(oldToms => oldToms + 1);
-    }
+        const newToms = popDatas[type].toms;
 
-    function getRandomNumber(min, max) {
-        return Math.floor(Math.random() * (max + 1 - min) + min);
+        pops.current.push(newPop);
+        setToms(oldToms => oldToms + newToms);
     }
 
     pops.current = pops.current.filter(pop => {
@@ -37,9 +50,9 @@ function Home({ contentRef }) {
     return <Section>
         <div className='home__pops'>
             {pops.current.map(pop => {
-                const text = pop.isOuch ? 'ouch' : '+1';
-                const color = pop.isOuch ? 'red' : null;
-                const fontFamily = pop.isOuch ? 'Eater, cursive' : null;
+                const popData = popDatas[pop.type];
+                let { toms, text, color, fontFamily } = popData;
+                text ??= '+' + toms;
 
                 return <div
                     key={pop.timestamp}
@@ -67,6 +80,26 @@ function Home({ contentRef }) {
                 className='home__tom'
                 onClick={handleTomClick}
             >
+                <img
+                    className='home__image'
+                    src={TomImage}
+                    alt=''
+                    useMap='#tom'
+                    draggable={false}
+                />
+                <map
+                    name='tom'
+                    className='home__map'
+                >
+                    {/* Use this tool to create the area coords of the image map: https://summerstyle.github.io/summer/
+                     Make sure the image you're using in the tool has the same width/height that is set in the CSS file.*/}
+                    <area
+                        shape="poly"
+                        coords="196, 212, 184, 196, 182, 178, 176, 173, 171, 158, 174, 152, 172, 142, 179, 115, 202, 99, 232, 98, 245, 105, 256, 120, 260, 134, 257, 150, 250, 166, 248, 179, 244, 196, 237, 209, 227, 217, 217, 221, 204, 220"
+                        alt=''
+                        onClick={handleHeadClick}>
+                    </area>
+                </map>
             </div>
         </div>
     </Section>

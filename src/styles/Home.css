@@ -86,18 +86,24 @@
 }
 
 .home__tom {
+    position: relative;
     width: 350px;
     aspect-ratio: 1;
+    overflow: hidden;
     border-radius: 50%;
     border: 4px solid var(--primary-color);
-    background: url(../assets/tom/tom.png);
-    background-position: 55% 30%;
-    background-size: 450px;
     box-shadow: 0 10px 20px black;
     filter: drop-shadow(0 0 50px black);
     cursor: pointer;
     animation: float 3s ease infinite;
     transition: scale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.home__image {
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    width: 400px;
 }
 
 .home__tom:active {
