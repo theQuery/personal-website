@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.597a370d.css",
-    "main.js": "/personal-website/static/js/main.abfe0fdb.js",
+    "main.css": "/personal-website/static/css/main.941c98d5.css",
+    "main.js": "/personal-website/static/js/main.f7ea1ae9.js",
     "static/media/tom.png": "/personal-website/static/media/tom.134630f9e547934bc7e8.png",
     "static/media/tom-behind.jpg": "/personal-website/static/media/tom-behind.caf06a8864be0219f440.jpg",
     "static/media/tom-side.jpg": "/personal-website/static/media/tom-side.187b2d968e890ae35e7c.jpg",
@@ -23,11 +23,11 @@
     "static/media/sql.svg": "/personal-website/static/media/sql.891350e166cbe6220f65029261bb98e4.svg",
     "static/media/html.svg": "/personal-website/static/media/html.c4dc271e3c51c59f3ce9120cd3d6792a.svg",
     "static/media/css.svg": "/personal-website/static/media/css.ae406505a52baef4b4ee0f3966b1cb5e.svg",
-    "main.597a370d.css.map": "/personal-website/static/css/main.597a370d.css.map",
-    "main.abfe0fdb.js.map": "/personal-website/static/js/main.abfe0fdb.js.map"
+    "main.941c98d5.css.map": "/personal-website/static/css/main.941c98d5.css.map",
+    "main.f7ea1ae9.js.map": "/personal-website/static/js/main.f7ea1ae9.js.map"
   },
   "entrypoints": [
-    "static/css/main.597a370d.css",
-    "static/js/main.abfe0fdb.js"
+    "static/css/main.941c98d5.css",
+    "static/js/main.f7ea1ae9.js"
   ]
 }
