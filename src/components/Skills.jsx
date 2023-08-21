@@ -21,7 +21,13 @@ function IconList({ label, icons }) {
             {label}
         </h3>
         <div className='skills__icons'>
-            {icons}
+            {icons.map(icon => <div
+                key={icon.label}
+                className='skills__icon'
+            >
+                {icon.component}
+                <span>{icon.label}</span>
+            </div>)}
         </div>
     </div>
 }
@@ -54,32 +60,32 @@ function Skills() {
             </p>
             <IconList
                 label='Languages'
-                icons={<>
-                    <JavaScriptIcon />
-                    <HTMLIcon />
-                    <CSSIcon />
-                    <SQLIcon />
-                    <LuaIcon />
-                    <AutoHotKeyIcon />
-                </>}
+                icons={[
+                    { label: 'JavaScript', component: <JavaScriptIcon /> },
+                    { label: 'HTML', component: <HTMLIcon /> },
+                    { label: 'CSS', component: <CSSIcon /> },
+                    { label: 'SQL', component: <SQLIcon /> },
+                    { label: 'Lua', component: <LuaIcon /> },
+                    { label: 'AutoHotKey', component: <AutoHotKeyIcon /> }
+                ]}
             />
             <IconList
                 label='Frameworks'
-                icons={<>
-                    <ReactIcon />
-                    <NodeJSIcon />
-                    <ExpressIcon />
-                </>}
+                icons={[
+                    { label: 'React', component: <ReactIcon /> },
+                    { label: 'NodeJS', component: <NodeJSIcon /> },
+                    { label: 'Express', component: <ExpressIcon /> }
+                ]}
             />
             <IconList
                 label='Services'
-                icons={<>
-                    <CFIcon />
-                    <CMIcon />
-                    <EC2Icon />
-                    <RDSIcon />
-                    <S3Icon />
-                </>}
+                icons={[
+                    { label: 'CloudFront', component: <CFIcon /> },
+                    { label: 'Certificate Manager', component: <CMIcon /> },
+                    { label: 'EC2', component: <EC2Icon /> },
+                    { label: 'RDS', component: <RDSIcon /> },
+                    { label: 'S3', component: <S3Icon /> }
+                ]}
             />
         </div>
     </Section>
